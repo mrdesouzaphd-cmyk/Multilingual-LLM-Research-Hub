@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>de Souza et al. (2023) — Avaliação Multilíngue do GPT-4 — Resumo de Pesquisa</title>
+<style>
+  @page { size: Letter; margin: 0.5in; }
+  :root {
+    --ink: #0a0a0a;
+    --muted: #444;
+    --rule: #888;
+    --accent: #1f3a5f;
+    --bg-panel: #f3f3f0;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: "Charter", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-size: 10.5pt;
+    line-height: 1.32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body { padding: 0.4in; max-width: 8.5in; }
+  h1 {
+    font-size: 16pt;
+    margin: 0 0 2pt 0;
+    line-height: 1.18;
+    font-weight: 700;
+  }
+  h1 .sub {
+    display: block;
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 2pt;
+  }
+  .meta {
+    font-size: 9.5pt;
+    color: var(--muted);
+    margin-bottom: 8pt;
+    padding-bottom: 6pt;
+    border-bottom: 0.5pt solid var(--rule);
+  }
+  .meta strong { color: var(--ink); }
+  h2 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    border-bottom: 0.5pt solid var(--accent);
+    padding-bottom: 1pt;
+    margin: 10pt 0 4pt 0;
+    font-weight: 700;
+  }
+  p { margin: 0 0 5pt 0; }
+  ul { margin: 0 0 5pt 0; padding-left: 14pt; }
+  li { margin-bottom: 2pt; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+  }
+  .panel {
+    background: var(--bg-panel);
+    border-left: 2pt solid var(--accent);
+    padding: 6pt 8pt;
+    font-size: 9.8pt;
+  }
+  .panel h2 {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .keywords {
+    font-size: 9.2pt;
+    color: var(--muted);
+    margin-top: 4pt;
+  }
+  .keywords code {
+    display: inline-block;
+    padding: 1pt 5pt;
+    background: #ececea;
+    border-radius: 3pt;
+    margin: 1pt 2pt 1pt 0;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 8.5pt;
+    color: var(--ink);
+  }
+  .findings {
+    counter-reset: f;
+    list-style: none;
+    padding-left: 0;
+  }
+  .findings li {
+    counter-increment: f;
+    padding-left: 18pt;
+    position: relative;
+    margin-bottom: 3pt;
+  }
+  .findings li::before {
+    content: "F" counter(f);
+    position: absolute;
+    left: 0; top: 0;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 8pt;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .footer {
+    margin-top: 10pt;
+    padding-top: 5pt;
+    border-top: 0.5pt solid var(--rule);
+    font-size: 8.5pt;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .no-print { display: none; }
+  @media screen {
+    body { background: #e9e8e4; }
+    .page {
+      max-width: 8.5in;
+      min-height: 11in;
+      margin: 16px auto;
+      padding: 0.5in;
+      background: white;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+    }
+    .no-print {
+      display: block;
+      max-width: 8.5in;
+      margin: 16px auto 0;
+      padding: 10px 14px;
+      background: #fff8d6;
+      border: 1px solid #e0c441;
+      font-family: -apple-system, system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      border-radius: 4px;
+    }
+    .no-print kbd {
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <strong>Para salvar como PDF:</strong> pressione <kbd>⌘</kbd>+<kbd>P</kbd>, escolha
+  <em>"Salvar como PDF"</em>, defina <em>Margens → Nenhuma</em> ou <em>Padrão</em>, e
+  <strong>desmarque "Cabeçalhos e rodapés"</strong>. A página está dimensionada para US Letter.
+  Esta caixa amarela não aparece no PDF.
+  &nbsp;|&nbsp; <a href="index.html" style="font-weight:600;">🇺🇸 English version</a>
+</div>
+
+<div class="page">
+
+  <h1>
+    Simulação de Diálogos e Personagens no ChatGPT-4
+    <span class="sub">Análise Comparativa do Desempenho em Idiomas Inglês e Português</span>
+  </h1>
+
+  <div class="meta">
+    <strong>Fabiano Rodrigues de Souza</strong> (primeiro autor),
+    Denise da Vinha Ricieri, Raphaela V. G. Barreto, Adriana M. G. de Farias
+    &nbsp;·&nbsp;
+    <strong>CoBICET 2023</strong> — IV Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, Online, ago–set 2023
+    &nbsp;·&nbsp;
+    Trabalho completo revisado por pares
+  </div>
+
+  <h2>Pergunta de pesquisa</h2>
+  <p>
+    Como a qualidade das respostas do GPT-4 difere entre inglês e português sob um
+    prompt estruturado idêntico — e qual mecanismo explica essa diferença?
+  </p>
+
+  <h2>Metodologia</h2>
+  <ul>
+    <li><strong>Sujeito:</strong> GPT-4 (LLM <code style="font-family:inherit">code-davinci-003</code>) acessado via ChatGPT, abril de 2023, conta geolocalizada nos EUA.</li>
+    <li><strong>Classe de prompt:</strong> Aprendizagem em Contexto (ICL) — escolhida para alavancar o contexto do prompt em vez de depender apenas da generalização do pré-treino.</li>
+    <li><strong>Estrutura do prompt (framework Prompt-EDU):</strong> três componentes — contexto · finalidade da generalização · chave de comando.</li>
+    <li><strong>Tarefa:</strong> diálogo simulado entre Paulo Freire (educador brasileiro) e Mark Zuckerberg (CEO da Meta) sobre IA na educação — selecionados para controlar equilíbrio cultural-de-dados, generalização cross-domínio e reconhecimento pré-cutoff.</li>
+    <li><strong>Condições:</strong> mesmo prompt aplicado em PT-BR e EN-US; validação por tradução cruzada via o próprio GPT-4; reanálise após tradução.</li>
+    <li><strong>Dimensões analíticas:</strong> conteúdo (substância, detalhe) · contexto (fidelidade ao escopo) · linguagem (vocabulário, complexidade).</li>
+  </ul>
+
+  <div class="grid">
+    <div>
+      <h2>Achados principais</h2>
+      <ul class="findings">
+        <li>Respostas em inglês mensuravelmente <strong>mais ricas em detalhe e escopo referencial</strong> que em português, sob prompts idênticos.</li>
+        <li>Respostas em português <strong>concisas e rasas</strong> — apenas o essencial, com menor diversidade de vocabulário.</li>
+        <li>Preservação de contexto <strong>robusta nos dois idiomas</strong> — a estrutura ICL generalizou o enquadramento com sucesso através da tradução.</li>
+        <li>Causa raiz traceada ao <strong>pré-treino dominado pelo inglês</strong> e a um <strong>pipeline oculto de dupla tradução</strong> para prompts em outros idiomas.</li>
+        <li>É necessária <strong>engenharia de prompt mais forte e sistematizada no idioma nativo</strong> para implantações em idiomas não-ingleses.</li>
+        <li>Achados mapeados na <strong>taxonomia de 5 fontes de viés em NLP de Hovy &amp; Prabhumoye</strong> (dados, anotação, representação de entrada, modelos, desenho de tarefa).</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>Implicações práticas</h2>
+      <p>Qualquer organização que implante LLMs em mercados não-ingleses precisa de (1) engenharia de prompt sistemática no idioma nativo, (2) pipelines explícitos de avaliação multilíngue e (3) revisão humana das saídas do modelo.</p>
+      <p>Educadores que integram IA em experiências de aprendizagem devem desenvolver letramento em IA, competência estruturada em design de prompts e consciência sobre o viés induzido pela tradução antes de confiar em conteúdos gerados por LLM.</p>
+      <p style="margin-top:6pt;"><em>O artigo conclui: o próprio ChatGPT reconhece que suas respostas não são 100% confiáveis e exigem revisão humana.</em></p>
+    </div>
+  </div>
+
+  <h2>Conceitos técnicos abordados</h2>
+  <div class="keywords">
+    <code>LLM</code><code>GPT-4</code><code>Transformer</code><code>Mecanismo de atenção</code><code>Tokenização</code><code>Embeddings</code><code>Decodificação autorregressiva</code><code>NLP</code><code>Aprendizagem em Contexto (ICL)</code><code>Engenharia de prompt</code><code>Fine-tuning</code><code>NLP multilíngue / cross-lingual</code><code>Viés de tradução</code><code>Alucinação</code><code>Human-in-the-loop</code><code>IA responsável</code><code>IA na educação</code><code>Taxonomia de Bloom / Prompt-EDU</code>
+  </div>
+
+  <h2>Referências selecionadas (lista completa no artigo original)</h2>
+  <p style="font-size:9pt;color:var(--muted);">
+    Vaswani et al., <em>Attention is all you need</em> (2017) ·
+    Liu et al., <em>Pre-train, prompt, and predict</em> (2023, ACM Comp. Surv.) ·
+    Wang et al., <em>LLMs are implicitly topic models</em> (arXiv 2301.11916) ·
+    Liang et al., <em>GPT detectors are biased against non-native English writers</em> (arXiv 2304.02819) ·
+    Hovy &amp; Prabhumoye (2021) sobre fontes de viés em NLP ·
+    Kasneci et al., <em>ChatGPT for good?</em> (Learning &amp; Individual Differences, 2023) ·
+    OpenAI Inc., <em>GPT-4 Technical Report</em> (arXiv 2303.08774, 2023).
+  </p>
+
+  <div class="footer">
+    <span>Fabiano R. de Souza, PhD &nbsp;·&nbsp; mrdesouzaphd@gmail.com</span>
+    <span>Resumo de Pesquisa · CoBICET 2023 · Primeiro autor</span>
+  </div>
+</div>
+
+</body>
+</html>
