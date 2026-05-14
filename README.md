@@ -11,6 +11,8 @@
 
 📄 **[Read the paper (PDF)](paper.pdf)** · 🌐 **[One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/)** · 🇧🇷 **[Resumo de uma página — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/index-pt.html)** · 🧪 **[Methodology breakdown](methodology.md)** · 📬 **[Subscribe to the newsletter](https://multidisciplinaryai.substack.com)**
 
+
+**EMO-AI 2025:** 🌐 **[One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/emo-ai.html)** · 🇧🇷 **[Resumo — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/emo-ai-pt.html)** · 🎥 **[Part 1](https://www.youtube.com/watch?v=NWPI6LjiSiM&t=102s)** · 🎥 **[Part 2](https://www.youtube.com/watch?v=_ulw3WDSQYs&t=57s)**
 ---
 
 ## 🇺🇸 English
@@ -104,6 +106,36 @@ Pedimos ao GPT-4 que simulasse um diálogo hipotético entre Paulo Freire (educa
 
 ---
 
+---
+
+## 🎓 EMO-AI Teaching Loop — UNICAMP X Inovações Curriculares 2025
+
+> **EMO-AI TEACHING LOOP: UMA ABORDAGEM DE MICROLEARNING NEURODIDÁTICA USANDO WHATSAPP E PROMPTS DE IA GENERATIVA**
+> Fabiano Rodrigues de Souza (first author), Denise da Vinha Ricieri, Rafaela V. G. Barreto, Adriana M. G. de Farias
+> Peer-reviewed · X Seminário de Inovações Curriculares · UNICAMP · 4–6 November 2025 · Comunicação Oral Virtual
+
+🌐 [One-page brief — EN](emo-ai.html) · 🇧🇷 [Resumo de uma página — PT](emo-ai-pt.html) · 🎥 [Presentation Part 1](https://www.youtube.com/watch?v=NWPI6LjiSiM&t=102s) · 🎥 [Presentation Part 2](https://www.youtube.com/watch?v=_ulw3WDSQYs&t=57s)
+
+### What this study is about
+
+This study examines how a **neurodidactic microlearning** intervention delivered via **WhatsApp** — combining Generative AI prompts with emotional engagement strategies — affects teacher professional learning outcomes. Two AI-generated prompts were deployed in a WhatsApp group spanning multiple time zones (USA + Brazil): one using **GenAI Personalization** (ChatGPT imagines the participant 50 years in the future) and one using **Ikigai** (Japanese purpose-reflection technique). Emoji reactions + text were converted to quantitative sentiment analysis.
+
+### Key findings
+
+| Metric | Result |
+|---|---|
+| Enthusiasm rate | **21%** — strong personal connection to AI-generated content |
+| Curiosity rate | **19%** — documented desire to explore further |
+| Classroom transfer | Immediate — participants built lesson plans during the session |
+| Emoji-to-sentiment correlation | **1.0** — qualitative and quantitative signals fully aligned |
+| Session duration | ~1.5–4 hours (cross-timezone: USA + multiple Brazilian states) |
+| Model replicability | Adaptable to any chat platform beyond WhatsApp |
+
+### Certificates of Presentation
+
+📜 [Certificate — X Inovações Curriculares (participation)](Certificado-X-Inovacoes-Curriculares.png) · 📜 [Certificate — Presented Works (1)](Certificado-Trabalhos-apresentados-X-Inovacoes-1.png) · 📜 [Certificate — Presented Works (2)](Certificado-Trabalhos-apresentados-X-Inovacoes-2.png)
+
+---
 ## 🔬 Repository structure
 
 ```
