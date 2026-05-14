@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ricieri, de Souza et al. (2024) — PROMPT-EDU — Resumo de Pesquisa</title>
+<style>
+@page { size: Letter; margin: 0.5in; }
+:root { --ink: #0a0a0a; --muted: #444; --rule: #888; --accent: #1f3a5f; --bg-panel: #f3f3f0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: "Charter", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif; color: var(--ink); font-size: 10.5pt; line-height: 1.32; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { padding: 0.4in; max-width: 8.5in; }
+h1 { font-size: 16pt; margin: 0 0 2pt 0; line-height: 1.18; font-weight: 700; }
+h1 .sub { display: block; font-size: 11pt; font-weight: 400; color: var(--muted); font-style: italic; margin-top: 2pt; }
+.meta { font-size: 9.5pt; color: var(--muted); margin-bottom: 8pt; padding-bottom: 6pt; border-bottom: 0.5pt solid var(--rule); }
+.meta strong { color: var(--ink); }
+h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); border-bottom: 0.5pt solid var(--accent); padding-bottom: 1pt; margin: 10pt 0 4pt 0; font-weight: 700; }
+p { margin: 0 0 5pt 0; }
+ul { margin: 0 0 5pt 0; padding-left: 14pt; }
+li { margin-bottom: 2pt; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.panel { background: var(--bg-panel); border-left: 2pt solid var(--accent); padding: 6pt 8pt; font-size: 9.8pt; }
+.panel h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+.keywords { font-size: 9.2pt; color: var(--muted); margin-top: 4pt; }
+.keywords code { display: inline-block; padding: 1pt 5pt; background: #ececea; border-radius: 3pt; margin: 1pt 2pt 1pt 0; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 8.5pt; color: var(--ink); }
+.findings { counter-reset: f; list-style: none; padding-left: 0; }
+.findings li { counter-increment: f; padding-left: 18pt; position: relative; margin-bottom: 3pt; }
+.findings li::before { content: "F" counter(f); position: absolute; left: 0; top: 0; font-family: "SF Mono", Menlo, monospace; font-size: 8pt; color: var(--accent); font-weight: 700; }
+.footer { margin-top: 10pt; padding-top: 5pt; border-top: 0.5pt solid var(--rule); font-size: 8.5pt; color: var(--muted); display: flex; justify-content: space-between; }
+.no-print { display: none; }
+@media screen {
+body { background: #e9e8e4; }
+.page { max-width: 8.5in; min-height: 11in; margin: 16px auto; padding: 0.5in; background: white; box-shadow: 0 2px 14px rgba(0,0,0,0.12); }
+.no-print { display: block; max-width: 8.5in; margin: 16px auto 0; padding: 10px 14px; background: #fff8d6; border: 1px solid #e0c441; font-family: -apple-system, system-ui, sans-serif; font-size: 13px; line-height: 1.45; border-radius: 4px; }
+.no-print kbd { background: #fff; border: 1px solid #999; border-radius: 3px; padding: 1px 5px; font-family: monospace; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="no-print">
+<strong>Para salvar em PDF:</strong> pressione <kbd>Cmd</kbd>+<kbd>P</kbd>, escolha <em>"Salvar como PDF"</em>. Esta caixa amarela n&#227;o aparecer&#225; no PDF.
+&nbsp;|&nbsp; <a href="promptedu.html" style="font-weight:600;">&#127482;&#127480; English Version</a>
+</div>
+
+<div class="page">
+
+<h1>
+PROMPT-EDU: Roteiro de Comandos de Ajuste Fino para ChatGPT
+<span class="sub">Uma sequ&#234;ncia estruturada de prompts para otimizar o ajuste fino do ChatGPT em contextos educacionais</span>
+</h1>
+
+<div class="meta">
+<strong>Denise da Vinha Ricieri</strong> (primeira autora),
+Adriana M. G. de Farias, <strong>Fabiano Rodrigues de Souza</strong>, Raphaela V. G. Barreto
+&nbsp;&middot;&nbsp;
+<strong>SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia</strong> &mdash; v.6, n.1, p.107&ndash;138, jan./jun. 2024
+&nbsp;&middot;&nbsp;
+DOI: <a href="https://doi.org/10.36704/sciaseducomtec.v6i1.8374" target="_blank">10.36704/sciaseducomtec.v6i1.8374</a>
+&nbsp;&middot;&nbsp;
+Artigo em peri&#243;dico cient&#237;fico revisado por pares &nbsp;&middot;&nbsp; e-ISSN: 2674-905X
+</div>
+
+<h2>Pergunta de Pesquisa</h2>
+<p>
+Um conjunto estruturado e sequenciado de prompts &mdash; o Roteiro Prompt-EDU &mdash; pode otimizar de forma confi&#225;vel o ajuste fino (FT) do ChatGPT para contextos educacionais, inclusive para usu&#225;rios iniciantes com contas com hist&#243;rico m&#237;nimo de FT?
+</p>
+
+<h2>Metodologia</h2>
+<ul>
+<li><strong>Delineamento:</strong> Estudo experimental descritivo qualitativo testado em m&#250;ltiplas vers&#245;es do ChatGPT no Brasil e nos EUA.</li>
+<li><strong>Tipos de prompt utilizados:</strong> Aprendizagem em Contexto (ICL), Cadeia de Pensamentos (CoT) e prompts demonstrativos (Demo) combinados em sequ&#234;ncia estruturada.</li>
+<li><strong>Roteiro Prompt-EDU (3 perfis):</strong> Prompt de contexto &rarr; Prompts Demo-CoT &rarr; Prompt educacional (com verbos da Taxonomia de Bloom).</li>
+<li><strong>Cen&#225;rio de teste:</strong> Di&#225;logo simulado entre Paulo Freire e Mark Zuckerberg sobre IA e Educa&#231;&#227;o &mdash; mesmo cen&#225;rio do artigo CoBICET 2023, agora usado para validar o desempenho de FT do Roteiro.</li>
+<li><strong>Vi&#233;s abordado:</strong> Vi&#233;s de processamento de idioma n&#227;o nativo no GPT (pipeline de dupla tradu&#231;&#227;o: idioma de entrada &rarr; EN &rarr; idioma de sa&#237;da). Verbos da Taxonomia de Bloom usados para superar a ambiguidade de interpreta&#231;&#227;o verbal.</li>
+<li><strong>Contas testadas:</strong> IAR1-BRA (Brasil, GPT-3.5) &middot; IAR2-BRA (Brasil, GPT-4) &middot; IAT-EUA (EUA, GPT-4) &mdash; contas iniciantes de FT.</li>
+</ul>
+
+<div class="grid">
+<div>
+<h2>Principais Resultados</h2>
+<ul class="findings">
+<li>O Roteiro Prompt-EDU <strong>obteve sucesso em todos os marcadores anal&#237;ticos estabelecidos</strong> em todas as contas e vers&#245;es testadas do ChatGPT.</li>
+<li>O desempenho correspondeu aos <strong>benchmarks de aprendizado profundo de m&#225;quina</strong> descritos na literatura anterior para sequ&#234;ncias de prompts estruturadas.</li>
+<li>Um &#250;nico prompt Demo + prompt CoT bem estruturado <strong>superou o ICL multidemo</strong> &mdash; replicando os resultados de Chen et al. (2023).</li>
+<li><strong>Vi&#233;s de treinamento detectado e corrigido:</strong> conta do Brasil (IAR1-BRA) usava GPT-3.5 no meio do FT &mdash; vi&#233;s isolado e Roteiro adaptado.</li>
+<li><strong>Verbos da Taxonomia de Bloom</strong> controlaram efetivamente a interpreta&#231;&#227;o da IA dos verbos educacionais na barreira do idioma n&#227;o nativo (portugu&#234;s).</li>
+<li>Roteiro comprovado como <strong>confi&#225;vel para usu&#225;rios iniciantes</strong> que otimizam o FT para tem&#225;ticas do processo ensino-aprendizagem em contextos lusitanos.</li>
+</ul>
+</div>
+<div class="panel">
+<h2>O Roteiro Prompt-EDU (3 Perfis)</h2>
+<p><strong>Perfil 1 &mdash; Prompt de Contexto:</strong> Estabelece o dom&#237;nio educacional, a tarefa e a persona da IA como assistente educacional. Define a dire&#231;&#227;o do FT.</p>
+<p><strong>Perfil 2 &mdash; Prompt Demo-CoT:</strong> Fornece uma demonstra&#231;&#227;o de Cadeia de Pensamentos que treina o modelo a raciocinar em termos educacionais antes de produzir a sa&#237;da.</p>
+<p><strong>Perfil 3 &mdash; Prompt Educacional:</strong> Usa verbos de a&#231;&#227;o da Taxonomia de Bloom para atribuir uma tarefa de n&#237;vel cognitivo espec&#237;fico, superando a ambiguidade lingu&#237;stica e produzindo sa&#237;da educacionalmente v&#225;lida.</p>
+<p style="margin-top:5pt;font-size:9pt;color:var(--muted);">Testado: ChatGPT 3.5 &amp; 4 &middot; Contas Brasil &amp; EUA &middot; N&#237;vel iniciante de FT</p>
+</div>
+</div>
+
+<h2>Conceitos T&#233;cnicos e Compet&#234;ncias</h2>
+<div class="keywords">
+<strong style="font-size:8.5pt;color:var(--accent)">IA e Aprendizado de M&#225;quina:</strong>
+<code>LLM</code> <code>ChatGPT</code> <code>Ajuste Fino (FT)</code> <code>Deep Learning</code> <code>Arquitetura Transformer</code> <code>PLN</code> <code>Redes Neurais</code> <code>Generaliza&#231;&#227;o</code>
+<br><strong style="font-size:8.5pt;color:var(--accent)">Engenharia de Prompt:</strong>
+<code>Aprendizagem em Contexto (ICL)</code> <code>Cadeia de Pensamentos (CoT)</code> <code>Prompts Demo</code> <code>Roteiro Prompt-EDU</code> <code>Prompts Educacionais</code> <code>Sequenciamento de Prompts</code>
+<br><strong style="font-size:8.5pt;color:var(--accent)">Educa&#231;&#227;o e Pedagogia:</strong>
+<code>Taxonomia de Bloom</code> <code>Design Instrucional</code> <code>IA na Educa&#231;&#227;o</code> <code>Vi&#233;s de Idioma N&#227;o Nativo</code> <code>Forma&#231;&#227;o Docente</code> <code>Sistematiza&#231;&#227;o</code>
+</div>
+
+<h2>Por que Isso Importa para Educadores</h2>
+<p>A maioria dos educadores que usa o ChatGPT para planejamento de aulas, cria&#231;&#227;o de conte&#250;do ou feedback aos alunos trabalha com contas com ajuste fino m&#237;nimo &mdash; e escreve prompts em portugu&#234;s, o que introduz um vi&#233;s oculto de dupla tradu&#231;&#227;o. O Roteiro Prompt-EDU &#233; a primeira metodologia revisada por pares e testada especificamente desenvolvida para superar ambos os problemas: oferece aos educadores uma forma confi&#225;vel e sistem&#225;tica de treinar o ChatGPT para se comportar como um verdadeiro assistente educacional, usando a linguagem internacional da pedagogia (Taxonomia de Bloom) para transpor a barreira do idioma.</p>
+
+<h2>Refer&#234;ncias Selecionadas</h2>
+<p style="font-size:9pt;color:var(--muted);">
+Chen et al. (2023) &mdash; ICL com Demo &#250;nico vs. multidemo &middot;
+Wei et al. (2022) &mdash; Prompting por Cadeia de Pensamentos &middot;
+Liu et al. (2023) &mdash; Pr&#233;-treinar, induzir e prever (ACM Comp. Surv.) &middot;
+Wang et al. (2023) &mdash; LLMs como modelos de t&#243;picos impl&#237;citos &middot;
+Vaswani et al. (2017) &mdash; Aten&#231;&#227;o &#233; tudo que voc&#234; precisa &middot;
+Liang et al. (2023) &mdash; Detectores GPT com vi&#233;s contra escritores n&#227;o nativos &middot;
+Armstrong (2010) &mdash; Taxonomia de Bloom revisada &middot;
+Kasneci et al. (2023) &mdash; ChatGPT para o bem? (Learning &amp; Individual Differences) &middot;
+OpenAI Inc. (2023) &mdash; Relat&#243;rio T&#233;cnico GPT-4.
+</p>
+
+<h2>Acesse o Artigo Completo</h2>
+<p>
+<strong>ResearchGate (acesso aberto):</strong>
+<a href="https://www.researchgate.net/publication/382859526" target="_blank">researchgate.net/publication/382859526</a><br>
+<strong>Peri&#243;dico:</strong> SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia &mdash; v.6, n.1, 2024 &mdash; DOI: <a href="https://doi.org/10.36704/sciaseducomtec.v6i1.8374" target="_blank">10.36704/sciaseducomtec.v6i1.8374</a>
+</p>
+
+<h2>Sobre o Autor</h2>
+<p><strong>Fabiano Rodrigues de Souza</strong> &mdash; Doutor em Biotecnologia &middot; Harvard Graduate School of Education &middot; Dois MBAs &middot; Profissional Certificado Kirkpatrick &middot; 2&times; Pr&#234;mio Braskem &middot; Membro de Conselho Editorial desde 2006. Pesquisador na intersec&#231;&#227;o entre IA, neuroci&#234;ncia e educa&#231;&#227;o multilingual.</p>
+
+<div style="margin-top:8pt;padding:5pt 8pt;background:#f3f3f0;border-left:2pt solid #1f3a5f;font-size:9pt;">
+<strong>Veja tamb&#233;m &mdash; Artigo 1:</strong> <a href="index-pt.html">Simula&#231;&#227;o de Di&#225;logos e Personagens no ChatGPT-4 (CoBICET 2023)</a> &mdash; avalia&#231;&#227;o multilingual do GPT-4: qualidade das respostas em ingl&#234;s vs. portugu&#234;s, vi&#233;s de dupla tradu&#231;&#227;o, taxonomia de vi&#233;s em PLN.<br>
+<strong>Veja tamb&#233;m &mdash; Artigo 2:</strong> <a href="emo-ai-pt.html">EMO-AI Teaching Loop (UNICAMP X Inova&#231;&#245;es Curriculares 2025)</a> &mdash; microlearning neurodid&#225;tico via WhatsApp &amp; GenAI: 21% entusiasmo, 19% curiosidade, correla&#231;&#227;o&nbsp;=&nbsp;1,0.
+</div>
+
+<div class="footer">
+<span>Ricieri, de Souza et al. (2024) &mdash; PROMPT-EDU &mdash; SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia</span>
+<span><a href="promptedu.html">English Version</a></span>
+</div>
+
+</div>
+</body>
+</html>
