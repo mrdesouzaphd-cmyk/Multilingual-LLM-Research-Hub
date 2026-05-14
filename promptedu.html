@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ricieri, de Souza et al. (2024) — PROMPT-EDU — Research Brief</title>
+<style>
+@page { size: Letter; margin: 0.5in; }
+:root { --ink: #0a0a0a; --muted: #444; --rule: #888; --accent: #1f3a5f; --bg-panel: #f3f3f0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: "Charter", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif; color: var(--ink); font-size: 10.5pt; line-height: 1.32; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { padding: 0.4in; max-width: 8.5in; }
+h1 { font-size: 16pt; margin: 0 0 2pt 0; line-height: 1.18; font-weight: 700; }
+h1 .sub { display: block; font-size: 11pt; font-weight: 400; color: var(--muted); font-style: italic; margin-top: 2pt; }
+.meta { font-size: 9.5pt; color: var(--muted); margin-bottom: 8pt; padding-bottom: 6pt; border-bottom: 0.5pt solid var(--rule); }
+.meta strong { color: var(--ink); }
+h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); border-bottom: 0.5pt solid var(--accent); padding-bottom: 1pt; margin: 10pt 0 4pt 0; font-weight: 700; }
+p { margin: 0 0 5pt 0; }
+ul { margin: 0 0 5pt 0; padding-left: 14pt; }
+li { margin-bottom: 2pt; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.panel { background: var(--bg-panel); border-left: 2pt solid var(--accent); padding: 6pt 8pt; font-size: 9.8pt; }
+.panel h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+.keywords { font-size: 9.2pt; color: var(--muted); margin-top: 4pt; }
+.keywords code { display: inline-block; padding: 1pt 5pt; background: #ececea; border-radius: 3pt; margin: 1pt 2pt 1pt 0; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 8.5pt; color: var(--ink); }
+.findings { counter-reset: f; list-style: none; padding-left: 0; }
+.findings li { counter-increment: f; padding-left: 18pt; position: relative; margin-bottom: 3pt; }
+.findings li::before { content: "F" counter(f); position: absolute; left: 0; top: 0; font-family: "SF Mono", Menlo, monospace; font-size: 8pt; color: var(--accent); font-weight: 700; }
+.footer { margin-top: 10pt; padding-top: 5pt; border-top: 0.5pt solid var(--rule); font-size: 8.5pt; color: var(--muted); display: flex; justify-content: space-between; }
+.no-print { display: none; }
+@media screen {
+body { background: #e9e8e4; }
+.page { max-width: 8.5in; min-height: 11in; margin: 16px auto; padding: 0.5in; background: white; box-shadow: 0 2px 14px rgba(0,0,0,0.12); }
+.no-print { display: block; max-width: 8.5in; margin: 16px auto 0; padding: 10px 14px; background: #fff8d6; border: 1px solid #e0c441; font-family: -apple-system, system-ui, sans-serif; font-size: 13px; line-height: 1.45; border-radius: 4px; }
+.no-print kbd { background: #fff; border: 1px solid #999; border-radius: 3px; padding: 1px 5px; font-family: monospace; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="no-print">
+<strong>To save as PDF:</strong> press <kbd>Cmd</kbd>+<kbd>P</kbd>, choose <em>"Save as PDF"</em>. This yellow box won't appear in the PDF.
+&nbsp;|&nbsp; <a href="promptedu-pt.html" style="font-weight:600;">&#127463;&#127479; Vers&#227;o em Portugu&#234;s</a>
+</div>
+
+<div class="page">
+
+<h1>
+PROMPT-EDU: Fine-Tuning Command Script for ChatGPT
+<span class="sub">A Structured Prompt Sequence for Optimizing ChatGPT Fine-Tuning in Educational Contexts</span>
+</h1>
+
+<div class="meta">
+<strong>Denise da Vinha Ricieri</strong> (first author),
+Adriana M. G. de Farias, <strong>Fabiano Rodrigues de Souza</strong>, Raphaela V. G. Barreto
+&nbsp;&middot;&nbsp;
+<strong>SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia</strong> &mdash; v.6, n.1, p.107&ndash;138, jan./jun. 2024
+&nbsp;&middot;&nbsp;
+DOI: <a href="https://doi.org/10.36704/sciaseducomtec.v6i1.8374" target="_blank">10.36704/sciaseducomtec.v6i1.8374</a>
+&nbsp;&middot;&nbsp;
+Peer-reviewed journal article &nbsp;&middot;&nbsp; e-ISSN: 2674-905X
+</div>
+
+<h2>Research Question</h2>
+<p>
+Can a structured, sequenced set of prompts &mdash; the Prompt-EDU Script &mdash; reliably optimize the fine-tuning (FT) of ChatGPT for educational contexts, including for novice users with accounts that have minimal prior FT history?
+</p>
+
+<h2>Methodology</h2>
+<ul>
+<li><strong>Design:</strong> Qualitative descriptive experimental study tested across multiple ChatGPT versions in Brazil and the USA.</li>
+<li><strong>Prompt types used:</strong> In-Context Learning (ICL), Chain of Thought (CoT), and Demo prompts combined in a structured sequence.</li>
+<li><strong>Three-profile Prompt-EDU Script:</strong> Context prompt &rarr; Demo-CoT prompts &rarr; Educational prompt (using Bloom's Taxonomy verbs).</li>
+<li><strong>Test scenario:</strong> Simulated dialogue between Paulo Freire and Mark Zuckerberg on AI and Education &mdash; same scenario as CoBICET 2023 paper, now used to validate the script's FT performance.</li>
+<li><strong>Bias addressed:</strong> Non-native language processing bias in GPT (double translation pipeline: input language &rarr; EN &rarr; output language). Bloom's Taxonomy verbs used to override ambiguous verb interpretation.</li>
+<li><strong>Accounts tested:</strong> IAR1-BRA (Brazil, GPT-3.5) &middot; IAR2-BRA (Brazil, GPT-4) &middot; IAT-EUA (USA, GPT-4) &mdash; beginner FT accounts.</li>
+</ul>
+
+<div class="grid">
+<div>
+<h2>Key Findings</h2>
+<ul class="findings">
+<li>Prompt-EDU Script <strong>succeeded on all established analytical markers</strong> across all tested ChatGPT accounts and versions.</li>
+<li>Performance matched <strong>deep machine learning benchmarks</strong> described in prior literature for structured prompt sequences.</li>
+<li>A single Demo prompt + well-structured CoT prompt <strong>outperformed multi-demo ICL</strong> &mdash; replicating Chen et al. (2023) findings.</li>
+<li><strong>Training bias detected and corrected:</strong> Brazil account (IAR1-BRA) initially used GPT-3.5 mid-FT &mdash; bias isolated and script adapted.</li>
+<li><strong>Bloom's Taxonomy verbs</strong> effectively controlled AI interpretation of educational verbs across the non-native language (Portuguese) barrier.</li>
+<li>Script proven <strong>reliable for novice users</strong> optimizing FT for teaching-learning themes in Portuguese-speaking contexts.</li>
+</ul>
+</div>
+<div class="panel">
+<h2>The Prompt-EDU Script (3 Profiles)</h2>
+<p><strong>Profile 1 &mdash; Context Prompt:</strong> Establishes the educational domain, the task, and the AI persona as an educational assistant. Sets the FT direction.</p>
+<p><strong>Profile 2 &mdash; Demo-CoT Prompt:</strong> Provides a Chain of Thought demonstration that trains the model to reason in educational terms before producing output.</p>
+<p><strong>Profile 3 &mdash; Educational Prompt:</strong> Uses Bloom's Taxonomy action verbs to assign a specific cognitive-level task, overriding language ambiguity and producing educationally valid output.</p>
+<p style="margin-top:5pt;font-size:9pt;color:var(--muted);">Tested: ChatGPT 3.5 &amp; 4 &middot; Brazil &amp; USA accounts &middot; Beginner FT level</p>
+</div>
+</div>
+
+<h2>Technical Concepts &amp; Skills</h2>
+<div class="keywords">
+<strong style="font-size:8.5pt;color:var(--accent)">AI &amp; Machine Learning:</strong>
+<code>LLM</code> <code>ChatGPT</code> <code>Fine-Tuning (FT)</code> <code>Deep Learning</code> <code>Transformer Architecture</code> <code>NLP</code> <code>Neural Networks</code> <code>Generalization</code>
+<br><strong style="font-size:8.5pt;color:var(--accent)">Prompt Engineering:</strong>
+<code>In-Context Learning (ICL)</code> <code>Chain of Thought (CoT)</code> <code>Demo Prompts</code> <code>Prompt-EDU Framework</code> <code>Educational Prompts</code> <code>Prompt Sequencing</code>
+<br><strong style="font-size:8.5pt;color:var(--accent)">Education &amp; Pedagogy:</strong>
+<code>Bloom's Taxonomy</code> <code>Instructional Design</code> <code>AI in Education</code> <code>Non-Native Language Bias</code> <code>Teacher Training</code> <code>Systematization</code>
+</div>
+
+<h2>Why This Matters for Educators</h2>
+<p>Most educators using ChatGPT for lesson planning, content creation, or student feedback are working with accounts that have minimal fine-tuning &mdash; and they are writing prompts in non-English languages, which introduces a hidden double-translation bias. The Prompt-EDU Script is the first peer-reviewed, tested methodology specifically designed to overcome both problems: it gives educators a reliable, systematic way to train ChatGPT to behave as a genuine educational assistant, using the international language of pedagogy (Bloom's Taxonomy) to bridge the language gap.</p>
+
+<h2>Selected References</h2>
+<p style="font-size:9pt;color:var(--muted);">
+Chen et al. (2023) &mdash; Many-shot vs. single Demo ICL performance &middot;
+Wei et al. (2022) &mdash; Chain of Thought prompting &middot;
+Liu et al. (2023) &mdash; Pre-train, prompt, and predict (ACM Comp. Surv.) &middot;
+Wang et al. (2023) &mdash; LLMs as implicit topic models &middot;
+Vaswani et al. (2017) &mdash; Attention is all you need &middot;
+Liang et al. (2023) &mdash; GPT detectors biased against non-native writers &middot;
+Armstrong (2010) &mdash; Bloom's Taxonomy revised &middot;
+Kasneci et al. (2023) &mdash; ChatGPT for good? (Learning &amp; Individual Differences) &middot;
+OpenAI Inc. (2023) &mdash; GPT-4 Technical Report.
+</p>
+
+<h2>Read the Full Paper</h2>
+<p>
+<strong>ResearchGate (open access):</strong>
+<a href="https://www.researchgate.net/publication/382859526" target="_blank">researchgate.net/publication/382859526</a><br>
+<strong>Journal:</strong> SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia &mdash; v.6, n.1, 2024 &mdash; DOI: <a href="https://doi.org/10.36704/sciaseducomtec.v6i1.8374" target="_blank">10.36704/sciaseducomtec.v6i1.8374</a>
+</p>
+
+<h2>Author Bio</h2>
+<p><strong>Fabiano Rodrigues de Souza</strong> &mdash; PhD in Biotechnology &middot; Harvard Graduate School of Education &middot; Dual MBAs &middot; Kirkpatrick Certified Professional &middot; 2&times; Braskem Award Winner &middot; Editorial Board Member since 2006. Researcher at the intersection of AI, neuroscience, and multilingual education.</p>
+
+<div style="margin-top:8pt;padding:5pt 8pt;background:#f3f3f0;border-left:2pt solid #1f3a5f;font-size:9pt;">
+<strong>See also &mdash; Paper 1:</strong> <a href="index.html">Simulating Dialogues and Characters in ChatGPT-4 (CoBICET 2023)</a> &mdash; multilingual GPT-4 evaluation: English vs. Portuguese output quality, double-translation bias, NLP bias taxonomy.<br>
+<strong>See also &mdash; Paper 2:</strong> <a href="emo-ai.html">EMO-AI Teaching Loop (UNICAMP X Inova&#231;&#245;es Curriculares 2025)</a> &mdash; neurodidactic microlearning via WhatsApp &amp; GenAI: 21% enthusiasm, 19% curiosity, correlation&nbsp;=&nbsp;1.0.
+</div>
+
+<div class="footer">
+<span>Ricieri, de Souza et al. (2024) &mdash; PROMPT-EDU &mdash; SCIAS Educa&#231;&#227;o, Comunica&#231;&#227;o e Tecnologia</span>
+<span><a href="promptedu-pt.html">Vers&#227;o em Portugu&#234;s</a></span>
+</div>
+
+</div>
+</body>
+</html>
