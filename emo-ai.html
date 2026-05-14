@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>de Souza et al. (2025) — EMO-AI Teaching Loop — Research Brief</title>
+<style>
+@page { size: Letter; margin: 0.5in; }
+:root { --ink: #0a0a0a; --muted: #444; --rule: #888; --accent: #1f3a5f; --bg-panel: #f3f3f0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: "Charter", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif; color: var(--ink); font-size: 10.5pt; line-height: 1.32; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { padding: 0.4in; max-width: 8.5in; }
+h1 { font-size: 16pt; margin: 0 0 2pt 0; line-height: 1.18; font-weight: 700; }
+h1 .sub { display: block; font-size: 11pt; font-weight: 400; color: var(--muted); font-style: italic; margin-top: 2pt; }
+.meta { font-size: 9.5pt; color: var(--muted); margin-bottom: 8pt; padding-bottom: 6pt; border-bottom: 0.5pt solid var(--rule); }
+.meta strong { color: var(--ink); }
+h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); border-bottom: 0.5pt solid var(--accent); padding-bottom: 1pt; margin: 10pt 0 4pt 0; font-weight: 700; }
+p { margin: 0 0 5pt 0; }
+ul { margin: 0 0 5pt 0; padding-left: 14pt; }
+li { margin-bottom: 2pt; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.panel { background: var(--bg-panel); border-left: 2pt solid var(--accent); padding: 6pt 8pt; font-size: 9.8pt; }
+.panel h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+.keywords { font-size: 9.2pt; color: var(--muted); margin-top: 4pt; }
+.keywords code { display: inline-block; padding: 1pt 5pt; background: #ececea; border-radius: 3pt; margin: 1pt 2pt 1pt 0; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 8.5pt; color: var(--ink); }
+.findings { counter-reset: f; list-style: none; padding-left: 0; }
+.findings li { counter-increment: f; padding-left: 18pt; position: relative; margin-bottom: 3pt; }
+.findings li::before { content: "F" counter(f); position: absolute; left: 0; top: 0; font-family: "SF Mono", Menlo, monospace; font-size: 8pt; color: var(--accent); font-weight: 700; }
+.footer { margin-top: 10pt; padding-top: 5pt; border-top: 0.5pt solid var(--rule); font-size: 8.5pt; color: var(--muted); display: flex; justify-content: space-between; }
+.no-print { display: none; }
+@media screen {
+  body { background: #e9e8e4; }
+  .page { max-width: 8.5in; min-height: 11in; margin: 16px auto; padding: 0.5in; background: white; box-shadow: 0 2px 14px rgba(0,0,0,0.12); }
+  .no-print { display: block; max-width: 8.5in; margin: 16px auto 0; padding: 10px 14px; background: #fff8d6; border: 1px solid #e0c441; font-family: -apple-system, system-ui, sans-serif; font-size: 13px; line-height: 1.45; border-radius: 4px; }
+  .no-print kbd { background: #fff; border: 1px solid #999; border-radius: 3px; padding: 1px 5px; font-family: monospace; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="no-print">
+<strong>To save as PDF:</strong> press <kbd>Cmd</kbd>+<kbd>P</kbd>, choose <em>"Save as PDF"</em>. This yellow box won't appear in the PDF.
+&nbsp;|&nbsp; <a href="emo-ai-pt.html" style="font-weight:600;">Versao em Portugues</a>
+</div>
+
+<div class="page">
+
+<h1>
+The EMO-AI Teaching Loop
+<span class="sub">A Neurodidactic Microlearning Approach Using WhatsApp and Generative AI Prompts for Teacher Engagement</span>
+</h1>
+
+<div class="meta">
+<strong>Fabiano Rodrigues de Souza</strong> (first author),
+Denise da Vinha Ricieri, Rafaela V. G. Barreto, Adriana M. G. de Farias
+&nbsp;&middot;&nbsp;
+<strong>X Inovacoes Curriculares 2025 (UNICAMP)</strong> &mdash; Online Presentation, May 2025
+&nbsp;&middot;&nbsp;
+Peer-reviewed conference paper
+</div>
+
+<h2>Abstract</h2>
+<p>This study examines how a neurodidactic microlearning intervention delivered via WhatsApp &mdash; combining Generative AI prompts with emotional engagement strategies &mdash; affects teacher learning outcomes. Two AI-generated prompts (GenAI Personalization and Ikigai) were deployed in a WhatsApp group spanning multiple time zones (USA and several Brazilian states). Qualitative data (text plus emoji reactions) were converted to quantitative sentiment analysis, revealing a correlation of 1.0. Results demonstrate that short, emotionally anchored interactions drive authentic enthusiasm, curiosity, and immediate intent to apply new knowledge.</p>
+
+<div class="grid">
+<div>
+<h2>Key Findings</h2>
+<ul class="findings">
+<li><strong>21% enthusiasm rate</strong> &mdash; participants reported strong personal connection to the AI-generated content.</li>
+<li><strong>19% curiosity rate</strong> &mdash; documented desire to explore further applications.</li>
+<li><strong>Immediate classroom transfer</strong> &mdash; participants began building lesson plans during the session.</li>
+<li><strong>Emoji-to-sentiment correlation = 1.0</strong> &mdash; qualitative and quantitative signals fully aligned.</li>
+<li><strong>Cross-timezone delivery</strong> &mdash; asynchronous session across USA and multiple Brazilian states, approx. 1.5 to 4 hours.</li>
+<li><strong>Replicable model</strong> &mdash; the EMO-AI loop can be adapted to other chat platforms beyond WhatsApp.</li>
+</ul>
+</div>
+<div>
+<h2>Method Design</h2>
+<ul>
+<li><strong>Platform:</strong> WhatsApp group (asynchronous, multi-timezone)</li>
+<li><strong>Prompt 1 &mdash; GenAI Personalization:</strong> ChatGPT configured with user profile; AI generates a poster imagining the participant 50 years in the future.</li>
+<li><strong>Prompt 2 &mdash; Ikigai:</strong> Japanese concept applied to professional identity; participants reflect on purpose-driven teaching.</li>
+<li><strong>Data:</strong> Text messages plus emoji reactions converted via sentiment analysis.</li>
+<li><strong>Theory:</strong> Instructional Design, Andragogy, Neurodidactics, Microlearning, Self-Determination Theory.</li>
+</ul>
+</div>
+</div>
+
+<h2>Presentation Recordings (UNICAMP X Inovacoes Curriculares 2025)</h2>
+<p>
+<strong>Part 1</strong> &mdash; WhatsApp screen, GenAI personalization prompt, Ikigai technique, outcomes (starts at 1:42):<br>
+<a href="https://www.youtube.com/watch?v=NWPI6LjiSiM&amp;t=102s" target="_blank">https://www.youtube.com/watch?v=NWPI6LjiSiM&amp;t=102s</a>
+</p>
+<p>
+<strong>Part 2</strong> &mdash; Full presentation: EMO-AI loop, neurodidactics, Figure 3 correlation, replicability (starts at 0:57):<br>
+<a href="https://www.youtube.com/watch?v=_ulw3WDSQYs&amp;t=57s" target="_blank">https://www.youtube.com/watch?v=_ulw3WDSQYs&amp;t=57s</a>
+</p>
+
+<div class="grid">
+<div class="panel">
+<h2>Technical Concepts and Skills</h2>
+<div class="keywords">
+<code>Generative AI</code> <code>Microlearning</code> <code>Neurodidactics</code>
+<code>Bloom's Taxonomy</code> <code>Instructional Design</code> <code>Andragogy</code>
+<code>Sentiment Analysis</code> <code>Ikigai</code> <code>Self-Determination Theory</code>
+<code>WhatsApp as LMS</code> <code>Emoji Analytics</code> <code>Cross-timezone Learning</code>
+<code>Prompt Engineering</code> <code>ChatGPT Configuration</code>
+</div>
+</div>
+<div class="panel">
+<h2>Certificates of Presentation</h2>
+<ul>
+<li><a href="Certificado-Trabalhos-apresentados-X-Inovacoes-1.pdf">Certificate &mdash; Presented Works (1)</a></li>
+<li><a href="Certificado-Trabalhos-apresentados-X-Inovacoes-2.pdf">Certificate &mdash; Presented Works (2)</a></li>
+<li><a href="Certificado-X-Inovacoes-Curriculares.pdf">Certificate &mdash; X Inovacoes Curriculares</a></li>
+</ul>
+</div>
+</div>
+
+<h2>References</h2>
+<ul>
+<li>PROMPT-EDU Framework (de Souza et al., 2024)</li>
+<li>CoBICET 2023 &mdash; de Souza et al., Multilingual GPT-4 Evaluation</li>
+<li>Anderson &amp; Krathwohl (2001) &mdash; Revised Bloom's Taxonomy</li>
+<li>Immordino-Yang &amp; Damasio (2007) &mdash; We Feel, Therefore We Learn</li>
+<li>Erros Comuns no Uso de IA em Educacao (de Souza, 2024)</li>
+</ul>
+
+<h2>Author Bio</h2>
+<p><strong>Fabiano Rodrigues de Souza</strong> &mdash; PhD in Biotechnology &middot; Harvard Graduate School of Education &middot; Dual MBAs &middot; Kirkpatrick Certified Professional &middot; 2x Braskem Award Winner &middot; Editorial Board Member since 2006. Researcher at the intersection of neuroscience, AI, and education.</p>
+
+<div class="footer">
+<span>de Souza et al. (2025) &mdash; EMO-AI Teaching Loop &mdash; UNICAMP X Inovacoes Curriculares 2025</span>
+<span><a href="emo-ai-pt.html">Versao em Portugues</a></span>
+</div>
+
+</div>
+</body>
+</html>
