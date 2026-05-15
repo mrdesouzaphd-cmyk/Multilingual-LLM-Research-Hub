@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ricieri et al. (2023) — Rotina AUDI-GPTedu — Resumo de Pesquisa</title>
+<style>
+  @page { size: Letter; margin: 0.5in; }
+  :root {
+    --ink: #0a0a0a;
+    --muted: #444;
+    --rule: #888;
+    --accent: #1f3a5f;
+    --bg-panel: #f3f3f0;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: "Charter", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    font-size: 10.5pt;
+    line-height: 1.32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body { padding: 0.4in; max-width: 8.5in; }
+  h1 {
+    font-size: 16pt;
+    margin: 0 0 2pt 0;
+    line-height: 1.18;
+    font-weight: 700;
+  }
+  h1 .sub {
+    display: block;
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 2pt;
+  }
+  .meta {
+    font-size: 9.5pt;
+    color: var(--muted);
+    margin-bottom: 8pt;
+    padding-bottom: 6pt;
+    border-bottom: 0.5pt solid var(--rule);
+  }
+  .meta strong { color: var(--ink); }
+  h2 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    border-bottom: 0.5pt solid var(--accent);
+    padding-bottom: 1pt;
+    margin: 10pt 0 4pt 0;
+    font-weight: 700;
+  }
+  p { margin: 0 0 5pt 0; }
+  ul { margin: 0 0 5pt 0; padding-left: 14pt; }
+  li { margin-bottom: 2pt; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+  }
+  .panel {
+    background: var(--bg-panel);
+    border-left: 2pt solid var(--accent);
+    padding: 6pt 8pt;
+    font-size: 9.8pt;
+  }
+  .panel h2 {
+    margin-top: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .keywords {
+    font-size: 9.2pt;
+    color: var(--muted);
+    margin-top: 4pt;
+  }
+  .keywords code {
+    display: inline-block;
+    padding: 1pt 5pt;
+    background: #ececea;
+    border-radius: 3pt;
+    margin: 1pt 2pt 1pt 0;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 8.5pt;
+    color: var(--ink);
+  }
+  .findings {
+    counter-reset: f;
+    list-style: none;
+    padding-left: 0;
+  }
+  .findings li {
+    counter-increment: f;
+    padding-left: 18pt;
+    position: relative;
+    margin-bottom: 3pt;
+  }
+  .findings li::before {
+    content: "F" counter(f);
+    position: absolute;
+    left: 0; top: 0;
+    font-family: "SF Mono", Menlo, monospace;
+    font-size: 8pt;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .footer {
+    margin-top: 10pt;
+    padding-top: 5pt;
+    border-top: 0.5pt solid var(--rule);
+    font-size: 8.5pt;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .no-print { display: none; }
+  @media screen {
+    body { background: #e9e8e4; }
+    .page {
+      max-width: 8.5in;
+      min-height: 11in;
+      margin: 16px auto;
+      padding: 0.5in;
+      background: white;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+    }
+    .no-print {
+      display: block;
+      max-width: 8.5in;
+      margin: 16px auto 0;
+      padding: 10px 14px;
+      background: #fff8d6;
+      border: 1px solid #e0c441;
+      font-family: -apple-system, system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      border-radius: 4px;
+    }
+    .no-print kbd {
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <strong>Para salvar como PDF:</strong> pressione <kbd>⌘</kbd>+<kbd>P</kbd>, escolha
+  <em>"Salvar como PDF"</em>, defina <em>Margens → Nenhuma</em> ou <em>Padrão</em>, e
+  <strong>desmarque "Cabeçalhos e rodapés"</strong>. A página está dimensionada para US Letter.
+  Esta caixa amarela não aparece no PDF.
+  &nbsp;|&nbsp; <a href="audi-gptedu.html" style="font-weight:600;">🇺🇸 English version</a>
+  &nbsp;|&nbsp; <a href="index-pt.html">← Todos os Artigos</a>
+</div>
+
+<div class="page">
+
+  <h1>
+    Rotina AUDI-GPTedu: Reciclando Conteúdo de Slides com Auditoria de Objetivos de Aprendizagem
+    <span class="sub">ChatGPT e Taxonomia de Bloom Aplicados ao Design Instrucional de Slides</span>
+  </h1>
+
+  <div class="meta">
+    Denise da Vinha Ricieri (primeira autora), Raphaela V. G. Barreto,
+    <strong>Fabiano Rodrigues de Souza</strong> (terceiro autor), Adriana M. G. de Farias
+    &nbsp;·&nbsp;
+    <strong>CoBICET 2023</strong> — IV Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, Online, ago–set 2023
+    &nbsp;·&nbsp;
+    Trabalho completo revisado por pares
+  </div>
+
+  <h2>Pergunta de pesquisa</h2>
+  <p>
+    Uma rotina estruturada de 3 prompts no ChatGPT consegue auditar e realinhar de forma confiável
+    os objetivos de aprendizagem de slides à Taxonomia de Bloom — reduzindo a carga de trabalho
+    docente sem comprometer a qualidade instrucional?
+  </p>
+
+  <h2>Metodologia</h2>
+  <ul>
+    <li><strong>Modelo:</strong> GPT-4 via ChatGPT (abril de 2023), conta geolocalizada nos EUA.</li>
+    <li><strong>Classe de prompt:</strong> Aprendizagem em Contexto (ICL) — sem ajuste fino; toda a especificação da tarefa é carregada pela estrutura do prompt.</li>
+    <li><strong>Rotina AUDI-GPTedu de 3 prompts:</strong>
+      <ul>
+        <li><em>A1 — Extração de tópicos:</em> o prompt gera uma lista de tópicos a partir do conteúdo bruto dos slides.</li>
+        <li><em>A2 — Âncora "Grande Ideia":</em> o prompt isola o conceito central da aula como uma frase-âncora.</li>
+        <li><em>A3 — Alinhamento ao verbo de Bloom:</em> o prompt identifica o verbo cognitivo correto (Taxonomia de Bloom) para o objetivo da aula.</li>
+      </ul>
+    </li>
+    <li><strong>Corpus de teste:</strong> 3 arquivos de slides de aulas reais de sala de aula.</li>
+    <li><strong>Validação:</strong> saídas do GPT-4 comparadas com os planos de aula originais pela equipe de pesquisa.</li>
+    <li><strong>Controle linguístico:</strong> prompts em inglês utilizados, coerente com os achados de viés multilíngue (Souza et al., CoBICET 2023).</li>
+  </ul>
+
+  <div class="grid">
+    <div>
+      <h2>Achados principais</h2>
+      <ul class="findings">
+        <li>Rotina de 3 prompts alcançou <strong>100% de concordância</strong> com os planos de aula originais nos 3 arquivos testados.</li>
+        <li>ICL (sem ajuste fino) <strong>suficiente para tarefas de auditoria estruturada</strong> quando o design do prompt é sistemático e explícito.</li>
+        <li>Extração da "Grande Ideia" (A2) <strong>identificou com confiabilidade o conceito central</strong> em diferentes áreas do conhecimento.</li>
+        <li>Alinhamento ao verbo de Bloom (A3) possibilitou <strong>controle de qualidade no nível do objetivo</strong> sem necessidade de revisão especializada em cada etapa.</li>
+        <li>Rotina <strong>replicável por docentes</strong> sem expertise em aprendizado de máquina ou programação.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>Implicações práticas</h2>
+      <p>A rotina AUDI-GPTedu oferece um fluxo de trabalho prático e de baixa barreira para que educadores auditem e reciclem conteúdo de slides existente — alinhando-o à Taxonomia de Bloom sem reconstruir do zero.</p>
+      <p>A decomposição em 3 etapas (lista de tópicos → frase-âncora → verbo de taxonomia) espelha o raciocínio de designers instrucionais experientes, tornando a assistência da IA transparente e auditável.</p>
+      <p style="margin-top:6pt;"><em>Artigo complementar ao framework PROMPT-EDU (Ricieri et al., SCIAS 2024) e ao estudo de viés multilíngue (Souza et al., CoBICET 2023).</em></p>
+    </div>
+  </div>
+
+  <h2>Conceitos técnicos abordados</h2>
+  <div class="keywords">
+    <code>ChatGPT / GPT-4</code><code>Aprendizagem em Contexto (ICL)</code><code>Engenharia de prompt</code><code>Taxonomia de Bloom</code><code>Design instrucional</code><code>Objetivos de aprendizagem</code><code>Auditoria de slides</code><code>Alinhamento curricular</code><code>IA na educação</code><code>AUDI-GPTedu</code><code>Grande Ideia</code><code>Níveis cognitivos</code><code>Human-in-the-loop</code><code>NLP</code>
+  </div>
+
+  <h2>Referências selecionadas</h2>
+  <p style="font-size:9pt;color:var(--muted);">
+    Bloom et al., <em>Taxonomy of Educational Objectives</em> (1956) ·
+    Anderson &amp; Krathwohl (orgs.), <em>A Taxonomy for Learning, Teaching, and Assessing</em> (2001) ·
+    Souza et al., <em>Simulação de Diálogos e Personagens no ChatGPT-4</em> (CoBICET 2023) ·
+    Ricieri et al., <em>PROMPT-EDU: Roteiro de comandos de ajuste fino para ChatGPT</em> (SCIAS 2024) ·
+    OpenAI Inc., <em>GPT-4 Technical Report</em> (arXiv 2303.08774, 2023).
+  </p>
+
+  <div class="footer">
+    <span>Fabiano R. de Souza, PhD &nbsp;·&nbsp; mrdesouzaphd@gmail.com</span>
+    <span>Resumo de Pesquisa · CoBICET 2023 · Terceiro autor</span>
+  </div>
+</div>
+
+</body>
+</html>
