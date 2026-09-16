@@ -3,13 +3,33 @@
 > **DrDeSouzAI 🧠⚡** · *I lead educators to amplify AI expertise.*
 > *Lidero educadores para ampliar sua expertise em IA.*
 
-[![CoBICET 2023](https://img.shields.io/badge/CoBICET-2023-1f3a5f)](https://www.even3.com.br/cobicet2023) [![peer-reviewed](https://img.shields.io/badge/peer--reviewed-full%20paper-2d6a4f)]() [![first author](https://img.shields.io/badge/first%20author-Fabiano%20R.%20de%20Souza-c77dff)]() [![languages](https://img.shields.io/badge/languages-EN%20%7C%20PT--BR-f4a261)]() [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6205--0580-a7c957)](https://orcid.org/0000-0002-6205-0580)
+[![CoBICET 2023](https://img.shields.io/badge/CoBICET-2023-1f3a5f)](https://www.even3.com.br/cobicet2023) [![peer-reviewed](https://img.shields.io/badge/peer--reviewed-full%20paper-2d6a4f)]() [![first author](https://img.shields.io/badge/first%20author-Fabino%20R.%20de%20Souza-c77dff)]() [![languages](https://img.shields.io/badge/languages-EN%20%7C%20PT--BR-f4a261)]() [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6205--0580-a7c957)](https://orcid.org/0000-0002-6205-0580)
 
 📄 [Read the paper (PDF)](paper.pdf) · 🌐 [One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/) · 🇧🇷 [Resumo de uma página — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/index-pt.html) · 🧪 [Methodology breakdown](methodology.md) · 📡 [Subscribe to the newsletter](https://multidisciplinaryai.substack.com)
 
 **EMO-AI 2025:** 🌐 [One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/emo-ai.html) · 🇧🇷 [Resumo — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/emo-ai-pt.html) · 🧑‍🏫 [Part 1](https://www.youtube.com/watch?v=NWPI6LjiSiM&t=102s) · 🧑‍🏫 [Part 2](https://www.youtube.com/watch?v=_ulw3WDSQYs&t=57s)
 
 **PROMPT-EDU 2024:** 🌐 [One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/promptedu.html) · 🇧🇷 [Resumo — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/promptedu-pt.html) · 📖 [ResearchGate](https://www.researchgate.net/publication/382859526)
+
+---
+## 🔬 Repository structure
+
+```
+.
+├── README.md               ← you are here (hub overview)
+├── index.html              ← Paper 1 one-page brief — EN
+├── index-pt.html           ← Paper 1 resumo — PT
+├── emo-ai.html             ← Paper 2 one-page brief — EN
+├── emo-ai-pt.html          ← Paper 2 resumo — PT
+├── promptedu.html          ← Paper 3 one-page brief — EN
+├── promptedu-pt.html       ← Paper 3 resumo — PT
+├── paper.pdf               ← Paper 1 full peer-reviewed paper
+├── methodology.md          ← Paper 1 technical breakdown
+├── Certificado-X-Inovacoes-Curriculares.png        ← Paper 2 certificate (participation)
+├── Certificado-Trabalhos-apresentados-X-Inovacoes-1.png  ← Paper 2 certificate (selected)
+├── Certificado-Trabalhos-apresentados-X-Inovacoes-2.png  ← Paper 2 certificate (presented)
+└── LICENSE
+```
 
 ---
 
@@ -224,27 +244,6 @@ Uma sequência estruturada de três perfis de prompts — Contexto, Demo-CoT e P
 - ✅ Comprovado **confiável para usuários iniciantes** que otimizam o ChatGPT para contextos de ensino-aprendizagem
 
 🌐 [Resumo — PT](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/promptedu-pt.html) · 🌐 [One-page brief — EN](https://mrdesouzaphd-cmyk.github.io/Multilingual-LLM-Research-Hub/promptedu.html) · 📖 [Artigo completo (ResearchGate)](https://www.researchgate.net/publication/382859526)
-
----
-
-## 🔬 Repository structure
-
-```
-.
-├── README.md                                          ← you are here (hub overview)
-├── index.html                                         ← Paper 1 one-page brief — EN
-├── index-pt.html                                      ← Paper 1 resumo — PT
-├── emo-ai.html                                        ← Paper 2 one-page brief — EN
-├── emo-ai-pt.html                                     ← Paper 2 resumo — PT
-├── promptedu.html                                     ← Paper 3 one-page brief — EN
-├── promptedu-pt.html                                  ← Paper 3 resumo — PT
-├── paper.pdf                                          ← Paper 1 full peer-reviewed paper
-├── methodology.md                                     ← Paper 1 technical breakdown
-├── Certificado-X-Inovacoes-Curriculares.png           ← Paper 2 certificate (participation)
-├── Certificado-Trabalhos-apresentados-X-Inovacoes-1.png ← Paper 2 certificate (selected)
-├── Certificado-Trabalhos-apresentados-X-Inovacoes-2.png ← Paper 2 certificate (presented)
-└── LICENSE
-```
 
 ---
 
